@@ -1,0 +1,20 @@
+{
+  "name": "battleship",
+  "description": "",
+  "version": "1.0.0",
+  "main": "ship.js",
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.6"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.23.6",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
