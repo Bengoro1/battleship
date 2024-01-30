@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+html {
+  height: 100%;
+}
+
+* {
+  font-family: 'Inconsolata', monospace;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+  background-color: rgb(171, 58, 220);
+  color: white;
+  font-size: 26px;
+  padding: 9px 0 4px 25px;
+  font-weight: bolder;
+  box-shadow: inset 0 -2px 8px rgba(0, 0, 0, 0.495);
+}
+
+.game-cell {
+  width: 30px;
+  height: 30px;
+}
+
+.player-board,
+.computer-board,
+.game-cell {
+  border: 1px black solid;
+}
+
+.player-board,
+.computer-board {
+  height: 316px;
+}
+
+.player-board,
+.computer-board,
+.container {
+  display: flex;
+}
+
+.container {
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+button:not(.restart) {
+  position: absolute;
+  top: 150px;
+}
+
+.ship {
+  background-color: green;
+}
+
+.missed {
+  background-color: aqua;
+}
+
+.hit {
+  background-color: red;
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+
+.result-container {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 7px;
+  height: 150px;
+  width: 400px;
+  color: white;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 250px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer img {
+  height: 25px;
+  cursor: pointer;
+  transition: 1s transform;
+}
+
+.footer img:hover {
+  transform: rotate(180deg);
+}
