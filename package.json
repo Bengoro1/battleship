@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "jest",
-    "deploy": "gh-pages -d dist"
+    "copy-index-js": "cp src/index.js dist/index.js",
+    "deploy": "npm run copy-index-js && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
