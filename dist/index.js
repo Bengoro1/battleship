@@ -295,7 +295,7 @@ signature.textContent = `Copyright © Bengoro1 ${year}`;
 signature.setAttribute('class', 'signature');
 footer.appendChild(signature);
 const gitLogo = document.createElement('img');
-gitLogo.setAttribute('src', '../dist/github.jpg');
+gitLogo.setAttribute('src', 'github.jpg');
 gitLogo.setAttribute('alt', 'Logo');
 gitLogo.setAttribute('class', 'git-logo');
 gitLogo.setAttribute('onclick', "window.open('https://github.com/Bengoro1','_newtab');");
